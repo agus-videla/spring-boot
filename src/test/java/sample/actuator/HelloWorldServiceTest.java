@@ -12,4 +12,11 @@ public class HelloWorldServiceTest {
 		assertEquals("Expected correct message","Spring boot says hello from a Docker container",helloWorldService.getHelloMessage());
 	}
 	
+	@Test
+	public void myTest() {
+		HelloWorldService helloWorldService = new HelloWorldService();
+		assertEquals("Expected correct message","Hola Hola",helloWorldService.getHelloMessage());
+		assertEquals("Expected correct message","Hello Hello",helloWorldService.getHelloMessage());
+	}
+	
 }
